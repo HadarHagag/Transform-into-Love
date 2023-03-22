@@ -1,0 +1,36 @@
+body {
+    height: auto;
+    margin: auto;
+    direction: rtl;
+    font-family: ;
+    background-image: linear-gradient(#fff700 15%,#fff 75%);
+}
+
+.headline {
+    display: flex;
+    justify-content: right;
+    margin: 0 8%;
+}
+
+.info {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 10px;
+    height: auto;
+    margin: auto;
+    
+    
+}
+
+hr {
+    justify-self: center;
+    width: 300px;
+    size: 2px;
+
+
+}
+#form {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0;
+}
