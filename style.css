@@ -19,12 +19,13 @@ hr {
     justify-content: right;
     margin-top: 20px;
     color:ivory; 
-    background-color: #d37bd3; 
+    background-color: #e6b9e6; 
     width: 100%; 
 }
 
 h1 {
     margin-right: 5%;
+    text-shadow: 5px 2px 4px #d37bd3;
 }
 
 .intro{
@@ -38,7 +39,7 @@ h1 {
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 1.15em;
     margin: 20px 0 20px 0;
     color:#d37bd3;  
 }
@@ -48,7 +49,6 @@ p {
 }
 
 #p1 {
-    font-size: 1.25em;
     font-weight: 500;
     color: rgb(107, 106, 106);
 }
@@ -112,18 +112,57 @@ p {
     margin-top: 40px;
 }
 
-#form {
-   width: 50%; 
-  
-}
-
 #imgFooter{
     max-width:50%;
-    
+    justify-content: center;
+    align-items: center;  
 }
  
 #img3 {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     opacity: 0.9;
+}
+
+#form {
+    padding: 50px; 
+    width: 50%; 
+    height: 100%;
+ }
+
+fieldset {
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 20px;
+    background-color:#e6b9e6;
+    border: none; 
+    font-size: large; 
+    font-weight: bold;  
+}
+
+label {
+   float: right;
+   font-size: large;
+   font-weight:normal;
+   margin-right: 10%;
+   
+}
+input, textarea{
+    border: none;
+    width: 75%;
+    height: 24px;
+    margin: 10px 0;
+    margin-right: 10%;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 50px;
+    height: 30px;
+    margin-right: 10%;
 }
