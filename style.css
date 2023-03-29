@@ -97,25 +97,24 @@ p {
 
 #p4 {
     text-align: center;
-    padding:5%;
+    padding:20px;
     font-size: 20px;
     font-weight: 300;
     background-color: #e6b9e6;
     border-radius: 10%;
-
 }
 
 #form-area {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
     align-items: center;
     margin-top: 40px;
 }
 
 #imgFooter{
-    max-width:50%;
-    justify-content: center;
-    align-items: center;  
+    width: 90%; 
+    height: 100%;
 }
  
 #img3 {
@@ -125,8 +124,8 @@ p {
 }
 
 #form {
-    padding: 50px; 
-    width: 50%; 
+    
+    width: 70%; 
     height: 100%;
  }
 
@@ -161,7 +160,7 @@ textarea {
     height: 100px;
 }
 
-button {
+#submit {
     width: 50px;
     height: 30px;
     margin-right: 10%;
