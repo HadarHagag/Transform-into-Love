@@ -1,36 +1,168 @@
 body {
+    max-width: 100%;
     height: auto;
     margin: auto;
     direction: rtl;
-    font-family: ;
-    background-image: linear-gradient(#fff700 15%,#fff 75%);
-}
-
-.headline {
-    display: flex;
-    justify-content: right;
-    margin: 0 8%;
-}
-
-.info {
-    max-width: 800px;
-    background-color: #fff;
-    padding: 10px;
-    height: auto;
-    margin: auto;
-    
-    
+    font-family: Rubik;
+    background-color:ivory;
+    width: 1200px;
 }
 
 hr {
     justify-self: center;
     width: 300px;
     size: 2px;
+}
 
+.headline {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+    color:ivory; 
+    background-color: #e6b9e6; 
+    width: 100%; 
+}
+
+h1 {
+    margin-right: 5%;
+    text-shadow: 5px 2px 4px #d37bd3;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+}
+
+#section{
+    max-width: 50%;
+    margin-right: 5%;
+}
+
+h3 {
+    font-size: 1.15em;
+    margin: 20px 0 20px 0;
+    color:#d37bd3;  
+}
+
+p {
+    line-height: 150%;
+}
+
+#p1 {
+    font-weight: 500;
+    color: rgb(107, 106, 106);
+}
+
+#imgIntro{
+    float: left;
+    margin: -5% 0 0 5%;
+    max-width: 30%;
+}
+
+#img {
+    width: 100%;
+}
+
+#img2 {
+    width: 50%;
+    display: block;
+    margin: 30px auto;
+    width: 50%;
+    opacity: 0.9;
+    
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#p2 {
+    letter-spacing: 1px;
+    text-indent: 50px;
+    font-size: 1.25em;
+    justify-self: center;
+    text-align: center;
+    color: #d37bd3;
+    font-weight: 700;
+}
+
+#p3 {
+    padding:0 5%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+#p4 {
+    text-align: center;
+    padding:5%;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #e6b9e6;
+    border-radius: 10%;
 
 }
-#form {
+
+#form-area {
     display: flex;
     justify-content: center;
-    margin: 32px 0;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#imgFooter{
+    max-width:50%;
+    justify-content: center;
+    align-items: center;  
+}
+ 
+#img3 {
+    width: 100%;
+    padding: 10px;
+    opacity: 0.9;
+}
+
+#form {
+    padding: 50px; 
+    width: 50%; 
+    height: 100%;
+ }
+
+fieldset {
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 20px;
+    background-color:#e6b9e6;
+    border: none; 
+    font-size: large; 
+    font-weight: bold;  
+}
+
+label {
+   float: right;
+   font-size: large;
+   font-weight:normal;
+   margin-right: 10%;
+   
+}
+input, textarea{
+    border: none;
+    width: 75%;
+    height: 24px;
+    margin: 10px 0;
+    margin-right: 10%;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 50px;
+    height: 30px;
+    margin-right: 10%;
 }
