@@ -49,8 +49,10 @@ p {
 }
 
 #p1 {
-    font-weight: 500;
+    font-size: 1em;
+    font-weight: 700;
     color: rgb(107, 106, 106);
+    text-align: center;
 }
 
 #imgIntro{
@@ -67,7 +69,7 @@ p {
     width: 50%;
     display: block;
     margin: 30px auto;
-    width: 50%;
+    width: 70%;
     opacity: 0.9;
     
 }
@@ -104,8 +106,9 @@ p {
     border-radius: 10%;
 }
 
-#form-area {
+.form-area {
     display: grid;
+    grid-template-areas: "form imgFooter";
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
@@ -113,18 +116,19 @@ p {
 }
 
 #imgFooter{
+    grid-area: imgFooter;
     width: 90%; 
     height: 100%;
 }
  
 #img3 {
-    width: 100%;
-    padding: 10px;
+    width: 90%;
+    padding: 5%;
     opacity: 0.9;
 }
 
 #form {
-    
+    grid-area: form;
     width: 70%; 
     height: 100%;
  }
@@ -164,4 +168,13 @@ textarea {
     width: 50px;
     height: 30px;
     margin-right: 10%;
+}
+
+@media (max-width: 600px){
+    .form-area{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+         "imgFooter"
+         "form" ;
+    }
 }
