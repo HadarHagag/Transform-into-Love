@@ -8,6 +8,9 @@
     <title> Transform into Love </title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap"rel="stylesheet">
+    <!-- <script defer src="/__/firebase/5.9.1/firebase-app.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
 </head>
 
 <body>
@@ -95,12 +98,30 @@
 
                     <button type="submit"  id="submit" >שלח</button>  
             </fieldset>
+            <div id="response"></div>
         </form>
         <div id="imgFooter">
             <img id="img3"  src="./images/image1.jpeg" alt="Timor Makmel">
         </div> 
     </div>    
     <footer><p></p></footer>
-    <script type="module" src="script.js"></script> 
+    <script type="module"  src="test.js"></script>
+    <!-- <script type="module" src="script.js"></script>  -->
 </body>
 </html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Firebase function test</title>
+  //Firebase scripts 
+  <script defer src="/__/firebase/5.9.1/firebase-app.js"></script>
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+</head>
+<input id="name">
+<button id="helloWorldBtn">Say Hello</button>
+<div id="response"></div>
+//Test script 
+<script src="test.js"></script>
+</html> --> 
