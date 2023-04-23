@@ -1,9 +1,5 @@
 
-import { addInfo,addMail } from '../firebase.js';
-// import firebase from "https://www.gstatic.com/firebasejs/5.9.1/firebase.js";
-
-// var functions = firebase.functions(); // Use this to test against the deployed functions
-// var functions = functionsDebug(config, 5001); //Use this to test against locally deployed functions
+import { addInfo,addMail } from './firebase.js';
 
 document.getElementById('form').addEventListener('submit',(e) => {
 	e.preventDefault();

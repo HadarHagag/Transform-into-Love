@@ -1,6 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
-
-// const firebaseConfig = require('..config/')
+// import config from '../functions/src/config'
 const config = {
 	apiKey: 'AIzaSyACuGdZnxAcGsL56-L6AfvJwgd0RoVENBo',
 	authDomain: 'transform-into-love.firebaseapp.com',
@@ -45,14 +44,17 @@ export const addInfo =async (fullName, email, msg) => {
 	
 };
 
-export const addMail =async (fullName, email, msg) => {
+export const addMail =async (details) => {
 	async function AddDocument_AutoId() {
 		const contactInfo = collection(db, 'mail');
 		let result=	await addDoc(contactInfo, {
-			to: 'shakimi88@gmail',
+			to: 'shakimi88@gmail.com',
 			message:{
 				subject: 'Hello from Firebase!',
-				html: 'This is an <code>HTML</code> email body.'
+				html: `<h1>New Optional Customer</h1>
+				<p>Name:${details.fullName}<br>
+				Email:${details.email}<br>
+				Message:${details.msg}</p>`
 			}
 		});
 		return result;
